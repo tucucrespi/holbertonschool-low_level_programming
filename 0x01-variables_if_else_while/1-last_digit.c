@@ -23,7 +23,7 @@ printf("Last digit of %i is %i and is grater than 5\n", n, lastDigit);
 }
 else if (lastDigit == 0)
 {
-printf("Last digit of %i and is 0\n", n, lastDigit);
+printf("Last digit of %i is 0 and is 0\n", n, lastDigit);
 }
 else
 {
