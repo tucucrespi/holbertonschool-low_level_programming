@@ -8,6 +8,7 @@ int main(void)
 {
 int x;
 for (x = '1'; x <= '9'; x++)
-printf(x);
+printf("%i", x);
+printf('\n')
 return (0);
 }
