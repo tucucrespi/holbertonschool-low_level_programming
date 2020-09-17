@@ -6,23 +6,24 @@
  */
 int main(void)
 {
-int x;
-int p;
-for (x = '0'; x <= '9'; x++)
+
+int num, num1;
+
+for (num = '0' ; num <= '9' ; num++)
 {
-for (p = '0'; p <= '9'; p++)
+for (num1 = '0' ; num1 <= '9' ; num1++)
 {
-if (x == p)
+if (num == num1)
 {}
-else if (x > p)
+else if (num > num1)
 {}
 else
 {
-putchar(x);
-putchar(p);
-if (x == '8' && p == '9' )
+putchar(num);
+putchar(num1);
+if (num == '8' && num1 == '9')
 {}
-else 
+else
 {
 putchar(',');
 putchar(' ');
@@ -31,5 +32,6 @@ putchar(' ');
 }
 }
 putchar('\n');
+
 return (0);
 }
