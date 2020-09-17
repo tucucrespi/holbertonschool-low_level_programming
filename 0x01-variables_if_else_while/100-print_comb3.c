@@ -1,0 +1,35 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+int x;
+int p;
+for (x = '0'; x <= '9'; x++)
+{
+for (p = '0'; p <= '9'; p++)
+{
+if (x == p)
+{}
+else if (x > p)
+{}
+else
+{
+putchar(x);
+putchar(p);
+if (x == '8' && p == '9' )
+{}
+else 
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+}
+putchar('\n');
+return (0);
+}
