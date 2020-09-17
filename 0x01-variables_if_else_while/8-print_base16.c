@@ -7,7 +7,15 @@
 int main(void)
 {
 int x;
-for (x = '1'; x <= '9'; x++)
-printf(x); 
+char p;
+for (x = 0; x <= 9; x++)
+{
+putchar(x);
+}
+for (p = 'a'; x <= 'f'; p++)
+{
+putchar (p);
+}
+putchar('\n');
 return (0);
 }
