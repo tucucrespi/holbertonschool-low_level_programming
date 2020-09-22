@@ -1,14 +1,14 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet_x10 - use local funtions to create output
  *
- * Return: Always 0.
+ * return: prints to stdout the alphabet 10 times
  */
 void print_alphabet_x10(void)
 {
 int i;
-for (i=0 ; i<=9 ; i++)  
+for (i = 0 ; i <= 9 ; i++)
 {
 char x;
 for (x = 'a'; x <= 'z'; x++)
