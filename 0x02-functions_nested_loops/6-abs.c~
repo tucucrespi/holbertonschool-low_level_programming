@@ -1,0 +1,17 @@
+#include "holberton.h"
+
+/**
+ * _abs - writes the character c to stdout
+ * 
+ *
+ * Return: On success 0.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _abs(int x)
+{
+if (x < 0)
+{
+x = -x;
+}
+return (x);
+}
