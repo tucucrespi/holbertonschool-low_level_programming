@@ -12,9 +12,9 @@ int n;
 char x;
 for (n = '0'; n <= '9'; n++)
 {
-while (x = 'a'; x <= 'z'; x++)
+for (x = 'a'; x <= 'z'; x++)
 {
-_putchar(abc);
+_putchar(x);
 }
 _putchar('\n');
 }
