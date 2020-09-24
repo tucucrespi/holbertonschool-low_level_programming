@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_numbers - print the sum of two integer.
+ * more_numbers - print the sum of two integer.
  * print numbers 0 to 9
  *
  * Return: result int.
@@ -15,9 +15,10 @@ for (x = 0 ; x <= 9; x++)
 {
 for (p = 0; p <= 14; p++)
 {
-if (x > 9)
+if (p > 9)
 {
-_putchar (x / 10 + '0');
+_putchar (p / 10 + '0');
+}
 _putchar (p % 10 + '0');
 }
 _putchar ('\n');
