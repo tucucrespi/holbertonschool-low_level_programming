@@ -1,20 +1,40 @@
 #include <stdio.h>
 
+/**
+ *main - print numbers 1 to 100
+ *Return: print to numbers 1 to 100 except:
+ *replace multiples three print Fizz
+ *replace multiples five print Buzz
+ *multiples of both three and five print FizzBuzz
+ */
 int main(void)
 {
-	int i;
-	for(i=1; i<=100; i++)
+	int a;
+
+	for (a = 1; a <= 100; a++)
 	{
-		if(((i%3)||(i%5))== 0)
-			printf("number= %d FizzBuzz\n", i);
-		else if((i%3)==0)
-			printf("number= %d Fizz\n", i);
-		else if((i%5)==0)
-			printf("number= %d Buzz\n", i);
+		if ((a % 3) == 0 && (a % 5) == 0)
+		{
+			printf("FizzBuzz ");
+		}
+		else if ((a % 3) == 0)
+		{
+			printf("Fizz ");
+		}
+		else if (a == 100)
+		{
+			printf("Buzz");
+		}
+		else if ((a % 5) == 0)
+		{
+			printf("Buzz ");
+		}
 		else
-			printf("number= %d\n",i);
-
+		{
+			printf("%d ", a);
+		}
 	}
+	printf("\n");
 
-	return 0;
+	return (0);
 }
