@@ -3,7 +3,7 @@
 /**
  * print_line - print the sum of two integer.
  * print numbers 0 to 9
- * @n print _ 
+ * @n: prints the lines
  * Return: result int.
  */
 
