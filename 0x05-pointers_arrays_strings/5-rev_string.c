@@ -1,10 +1,21 @@
 #include "holberton.h"
 
 /**
- * rev_string - returns a string rev.
- * @s: s is words
- * Return: quantiti is i
+ * rev_string - Reverses a string
+ * @s: The string to be reversed
  */
-
 void rev_string(char *s)
 {
+int i, j = 0;
+char copy[11];
+
+for (i = 0; s[i] != '\0'; i++)
+copy[i] = s[i];
+i = i - 1;
+while (s[j] != '\0')
+{
+s[j] = copy[i];
+i--;
+j++;
+}
+}
