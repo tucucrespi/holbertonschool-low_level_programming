@@ -1,0 +1,10 @@
+#include "holberton.h"
+
+/**
+ * *_strcat - Copies the string pointed to by src into dest
+ * @dest: String being copied over
+ * @src: String being copied from
+ *
+ * Return: Always the pointer to dest
+ */
+char *_strcat(char *dest, char *src)
