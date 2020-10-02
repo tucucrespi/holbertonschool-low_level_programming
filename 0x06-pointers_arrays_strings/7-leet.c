@@ -1,21 +1,22 @@
 #include "holberton.h"
 /**
- *leet - ddddddd
- *@s: asdadasfs
- *Return: adsfafafds
+ * leet - encodes a string to 1337
+ * @s: Type char
+ * Return: s
  */
 char *leet(char *s)
 {
-int i, i2;
-char s2[20] = {"a4A4e3E3o0O0t7T7l1L1"};
+int i, j;
+
+char *s1 = "aeotlAEOTL";
+char *s2 = "4307143071";
+
 for (i = 0; s[i] != '\0'; i++)
 {
-for (i2 = 0; s2[i2] != '\0'; i2 = i2 + 2)
-}
-if (s[i] == s2[i2])
+for (j = 0; s1[j] != '\0'; j++)
 {
-s[i] = s2[i2 + 1];
-}
+if (s[i] == s1[j])
+s[i] = s2[j];
 }
 }
 return (s);
