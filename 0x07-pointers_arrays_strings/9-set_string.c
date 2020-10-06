@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * *_strchr - prints buffer in hexa
+ * set_string - prints buffer in hexa
  * @s: the address of memory to print
  * @to: the size of the memory to print
  * Return: Nothing.
