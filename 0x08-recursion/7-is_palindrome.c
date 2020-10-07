@@ -1,32 +1,43 @@
-#include "holberton.h"
-#include <stdio.h>
 /**
- *is_palindrome - asdadads
- *@s: adsasdadsad
- *Return: asdadssada
+ * _strlen_recursion - return length of string
+ * @s: string
+ * Return: length
  */
-int is_palindrome(char *s)
+int _strlen_recursion(char *s)
 {
-char arr[98];
-int i, a = 0;
-for (i = 0; s[i] != '\0'; i++)
-{
-}
-i--;
-for (; i >= 0; i--)
-{
-arr[a] = s[i];
-a++;
+if (*s == '\0')
+return (0);
+s++;
+return (1 + _strlen_recursion(s));
 }
 
-a = 0;
-while (arr[a] == s[a])
+/**
+ * check - helper function
+ * @str: string
+ * @len: length
+ * @count: counter
+ * Return: 1 if string is a palindrome, 0 if not
+ */
+
+int check(char *str, int len, int count)
 {
-a++;
-}
-if (a == (i + 1))
-{
+if (count < len && str[len] == str[count])
+return (check(str, len - 1, count + 1));
+if (count >= len)
+return (1);
 return (0);
 }
-return (1);
+
+/**
+ * is_palindrome - checks if the string is a palindrome
+ * @s:string to check
+ * Return: 1 if string is palindrome, 0 if not
+ */
+
+int is_palindrome(char *s)
+{
+int len = _strlen_recursion(s);
+int count = 0;
+
+return (check(s, len - 1, count));
 }
