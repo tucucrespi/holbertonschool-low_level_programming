@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include "holberton.h"
+
+/**
+ * main - prints buffer in hexa
+ * @argc: number of command line arguments
+ * @argv: number of command line arguments
+ * Return: Nothing.
+ */
+int main(int argc, char *argv[])
+{
+int c;
+for (c < 0 ; c < argc ; c++)
+printf("%s\n", argv[c]);
+return (0);
+}
