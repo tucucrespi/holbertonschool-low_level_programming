@@ -8,26 +8,18 @@
  * @argv: number of command line arguments
  * Return: Nothing.
  */
+
 int main(int argc, char *argv[])
 {
-
-int a, b, result;
-
-if (argv[1] != '\0')
+  int a, b, mult;
+if (argc == 3)
 {
-
 a = atoi(argv[1]);
 b = atoi(argv[2]);
-
-result = a *b;
-
-(void)argc;
-printf("%i\n", result);
+mult = a *b;
+printf("%d\n", mult);
 }
 else
-{
 printf("Error\n");
-return (1);
-}
 return (0);
 }
