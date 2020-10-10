@@ -11,7 +11,12 @@
 
 int main(int argc, char *argv[])
 {
-int i, a, sum = 0;
+int i, sum = 0, a;
+if (argc == 1)
+{
+printf("0\n");
+return (0);
+}
 for (i = 1; i < argc; i++)
 {
 a = atoi(argv[i]);
