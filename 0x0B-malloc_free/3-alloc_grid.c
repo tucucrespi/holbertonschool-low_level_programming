@@ -5,7 +5,7 @@
  * alloc_grid - array to ints
  * @width: witdh of array
  * @height: height of array
- * Return: the array, null 
+ * Return: the array,null
  */
 
 int **alloc_grid(int width, int height)
