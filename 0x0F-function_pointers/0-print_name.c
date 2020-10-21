@@ -2,10 +2,10 @@
 #include <stddef.h>
 
 /**
- * print_name - struct of dog
+ * print_name - sog
  * @name: name of dog
  * @f: age of dog
- * @char: owner of dog
+ * char: owner of dog
  * Return: return always 0
  */
 
