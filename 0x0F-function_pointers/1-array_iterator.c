@@ -18,7 +18,7 @@ if (size == 0)
 return;
 if (action == NULL)
 return;
-for (i = 0; i < size; i++)
+for (i = 0; i < (int)size; i++)
 {
 	action(array[i]);
 }
