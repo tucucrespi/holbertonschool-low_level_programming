@@ -1,0 +1,10 @@
+#include "lists.h"
+/**
+ * add_node_end - print the last node.
+ * @head: the inital pointer to the linked list
+ * @n: integer
+ * Return: the new node
+ */
+
+listint_t *add_nodeint_end(listint_t **head, const int n)
+{
