@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_nodeint_end - print the last node.
+ * get_nodeint_at_index - print the last node.
  * @head: the inital pointer to the linked list
  * @index: integer
  * Return: the new node
