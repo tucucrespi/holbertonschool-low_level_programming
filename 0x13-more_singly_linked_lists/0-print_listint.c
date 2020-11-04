@@ -8,7 +8,7 @@
  */
 size_t print_listint(const listint_t *h)
 {
-int i;
+unsigned int i;
 for (i = 0; h != NULL; i++)
 {
 printf("%i\n", h->n);
