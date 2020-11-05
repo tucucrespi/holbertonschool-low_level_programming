@@ -15,14 +15,26 @@ int c;
 unsigned int  len;
 
 
-if (b == NULL)
-return 0;
+if (!b)
+return (0);
 
-while (b[i] == '0' || b[i] == '1')
+while (b[i] != '\0')
 {
-val <<= 1;
-val += b[i]-'0';
 i++;
 }
-return val;
+len = i;
+i = 0;
+for (c = len - 1; c >= 0; c--)
+{
+if (b[c] != '0' && b[c] != '1')
+
+return (0);
+
+if (b[c] == '1')
+{
+i += p;
+}
+p *= 2;
+}
+return (i);
 }
