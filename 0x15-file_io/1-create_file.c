@@ -16,7 +16,7 @@ if (filename == NULL)
 {
 return (-1);
 }
- fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
+fd = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
 if (fd == -1)
 {
 return (-1);
