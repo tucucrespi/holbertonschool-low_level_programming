@@ -1,50 +1,48 @@
 #include "holberton.h"
 
 /**
- * main - program that copies the content of a file to another file.
- * @argc: number of arguments
- * @argv: arguments
- * Return: Always 0.
+ * main - function that call another function to copy a file
+ * @argc: int count of arguments
+ * @argv: char double pointer
+ *
+ * Return: int
  */
 int main(int argc, char **argv)
 {
-	int leer, escribir, fd1, fd2, close1, close2;
+	int rd_f, wr_f, fd_1, fd_2, cl_1, cl_2;
 	char buff[1024];
 
 	if (argc != 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+	{dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-	fd1 = open(argv[1], O_RDONLY);
-	leer = read(fd1, buff, 1024);
-	if (leer == -1 || fd1 == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", argv[1]);
-		close(fd1);
+	fd_1 = open(argv[1], O_RDONLY);
+	rd_f = read(fd_1, buff, 1024);
+	if (rd_f == -1 || fd_1 == -1)
+	{dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		close(fd_1);
 		exit(98);
 	}
-	fd2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 00664);
-	escribir = write(fd2, buff, leer);
-	if (fd2 == -1 || escribir == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", argv[2]);
-		close(fd2);
+	fd_2 = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
+	wr_f = write(fd_2, buff, rd_f);
+	if (fd_2 == -1 || wr_f == -1)
+	{dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		close(fd_2);
 		exit(99);
 	}
-	while (leer == 1024)
+	while (rd_f == 1024)
 	{
-		leer = read(fd1, buff, 1024);
-		escribir = write(fd2, buff, leer);
+		rd_f = read(fd_2, buff, 1024);
+		wr_f = write(fd_2, buff, rd_f);
 	}
-	close1 = close(fd1);
-	close2 = close(fd2);
-	if (close1 == -1)
-	{dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", close1);
+	cl_1 = close(fd_1);
+	cl_2 = close(fd_2);
+	if (cl_1 == -1)
+	{dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", cl_1);
 		exit(100);
 	}
-	if (close2 == -1)
-	{dprintf(STDERR_FILENO, "Error: Can't close fd %i\n", close2);
+	if (cl_2 == -1)
+	{dprintf(STDERR_FILENO, "Error: Can't close %d\n", cl_2);
 		exit(100);
 	}
 	return (0);
