@@ -31,13 +31,13 @@ aux->next->prev = new_node;
 new_node->next = aux->next;
 aux->next = new_node;
 new_node->n = n;
-new_node->prev = aux; 
+new_node->prev = aux;
 return (new_node);
 }
 
 /**
- * add_dnodeint - print all the elements in the list.
- * @n: abcabcabc
+ * dlistint_len - print all the elements in the list.
+ * @h: abcabcabc
  * Return: the number of nodes
  */
 
