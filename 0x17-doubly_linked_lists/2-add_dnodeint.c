@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * dlistint_t - print all the elements in the list.
- * @h: the inital pointer to the linked list
- * @head: abcabcabc
+ * add_dnodeint - print all the elements in the list.
+ * @head: the inital pointer to the linked list
+ * @n: abcabcabc
  * Return: the number of nodes
  */
 
